@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
     <style>
         body {
             background-color: rgb(235, 235, 235);
-        }
-        .background-container {
-            background-image: url('fondoekisde.png');
-            background-size: cover;
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
         }
     </style>
     <style>
@@ -44,7 +26,16 @@
                 justify-content: center;
                 align-items: center;
             }
-    </style>    
+    </style> 
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>  
+
 </head>
 <body>
 <div class="container-fluid">
@@ -62,14 +53,22 @@
             <a class="nav-link" href="donaciones.html" id="pico1">Donaciones</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="" id="pico1">Contactos</a>
+            <a class="nav-link" href="#" id="pico1">Contactos</a>
         </li>
     </ul>
-</div>
-<div class="container-fluid background-container">
-    <div>
-        <h1>ROPA</h1>
-        <h4>Porque todas merecemos cosas únicas</h4>
+    <div class="row">
+        <div class="col-6">
+            <div style="position: relative;">
+                <img src="ovejita.png" style="width: 500px; height: 600px; margin-left: 50px;" alt="">
+                <img src="ovejita.png" alt="" style="position: absolute; top: 100px; left: 200px; width: 100px; height: 100px;">
+            </div>
+        </div>
+        
+        <div class="col-6">
+            <p><h3>Bienvenidos a EcoEstilo</h3></p>
+            <p>Te damos la bienvenida a EcoEstilo, donde nuestra misión es reutilizar la ropa y reducir el impacto ambiental. Muchas veces, la ropa en desuso termina en vertederos o incineradoras, lo que contribuye significativamente a la contaminación del aire y del agua. Para abordar este problema, hemos creado un programa de reciclaje donde transformamos prendas usadas en nuevas piezas únicas.</p>
+            <p>Además de reutilizar la ropa, hemos incorporado un toque especial: un pin personalizado hecho de plástico reciclado. Este pin, fabricado con plástico Número 4 que es respetuoso con el medio ambiente, acompaña cada prenda que vendemos. Con esto, no solo estamos promoviendo la moda sostenible, sino también contribuyendo a la preservación de nuestro planeta para las generaciones futuras.</p>
+        </div>
     </div>
 </div>
 
