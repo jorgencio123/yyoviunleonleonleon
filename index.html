@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -11,10 +11,14 @@
     <title>Hello, world!</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
             background-color: rgb(235, 235, 235);
         }
+        
         .background-container {
-            background-image: url('fondoekisde.png');
+            background-image: url('fondo.webp');
             background-size: cover;
             height: 100vh;
             width: 100%;
@@ -22,52 +26,99 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            position: relative; /* Añade posición relativa para que los elementos absolutos se posicionen correctamente */
+        }
+        
+        .decoracion1 {
+            position: absolute;
+            top: -40px; /* Ajusta este valor para mover el elemento más hacia arriba */
+            left: 0;
+            z-index: 1; /* Asegura que esté encima del contenido */
+        }
+
+        .decoracion2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 60px;
+    margin-top: 30px;
+    }
+
+    .decoracion3 {
+        position: absolute;
+        top: calc(100px + 20px); /* 100px es la altura de decoracion2, ajustado por el margen de 20px */
+        right: 0;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+        
+        .decoracion1 img {
+            width: 200px; /* Ajusta el ancho de la imagen */
+            height: 400px; /* Mantén la proporción de aspecto */
+        }
+
+        .decoracion2 img{
+            width: 100px;
+            height: 100px;
+        }
+
+        .decoracion3 img{
+            width: 200px;
+            height: 200px;
+        }
+        
+        .nav-link {
+            font-family: 'TT Commons Pro Expanded', sans-serif;
+            font-size: 15px;
+            color: black;
+        }
+        
+        .nav-link-unique {
+            font-family: 'Hatton', sans-serif;
+            font-size: 31.1px;
+            color: black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container-content {
+            padding: 20px;
         }
     </style>
-    <style>
-            #pico1 {
-                font-family: 'TT Commons Pro Expanded', sans-serif;
-                font-size: 15px;
-                margin-top: 13px;
-            }
-    
-            #pico2 {
-                font-family: 'Hatton', sans-serif;
-                font-size: 31.1px;
-            }
-            #pico1, #pico2 {
-                color: black;
-            }
-            #pico1, #pico2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-    </style>    
 </head>
 <body>
 <div class="container-fluid">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active"  href="https://jorgencio123.github.io/yyoviunleonleonleon/sobrenosotros.html" id="pico1">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://jorgencio123.github.io/yyoviunleonleonleon/productos.html" id="pico1">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://jorgencio123.github.io/yyoviunleonleonleon/index.html" id="pico2">ECOESTILO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://jorgencio123.github.io/yyoviunleonleonleon/donaciones.html" id="pico1">Donaciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="pico1">Contactos</a>
-            </li>
-        </ul>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link-unique" href="index.html">ECOESTILO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="donaciones.html">Donaciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contactos.html">Contactos</a>
+        </li>
+    </ul>
 </div>
 <div class="container-fluid background-container">
-    <div>
+    <div class="container-content">
+        <!-- Div de decoración -->
+        <div class="decoracion1"><img src="https://media-public.canva.com/dXFpA/MAE3PddXFpA/1/s.svg" alt=""></div>
+        <div class="decoracion2"><img src="https://media-public.canva.com/aOhzE/MAE6gZaOhzE/1/t.png" alt=""></div>
+        <div class="decoracion3"><img src="https://media-public.canva.com/KZBVg/MAE3PaKZBVg/1/s.svg" alt=""></div>
         <h1>ROPA</h1>
         <h4>Porque todas merecemos cosas únicas</h4>
     </div>

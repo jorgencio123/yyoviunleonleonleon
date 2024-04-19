@@ -13,7 +13,7 @@
     <title>Hello, world!</title>
     <style>
         body {
-            background-color: rgb(235, 235, 235);
+            background-color: rgb(231, 215, 201);;
         }
 
         .container-fluid {
@@ -54,6 +54,21 @@
         .donaciones-button:hover {
             background-color: #0056b3;
         }
+        .prisma{
+            position: absolute;
+            margin-left: 1350px;
+        }
+        .prisma img{
+            width: 100px;
+            height: 100px;
+        }
+        .pelito{
+            position: absolute;
+        }
+        .pelito img{
+            width: 150px;
+            height: 350px;
+        }
     </style>
         <style>
             #pico1 {
@@ -80,8 +95,8 @@
 
 <body>
     <div class="container-fluid">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
+        <ul class="nav justify-content-center" style="background-color:rgb(235,235,235); margin-top: -65px; padding-top: 20px; padding-bottom: 10px;">
+            <li class="nav-item" >
                 <a class="nav-link active"  href="https://jorgencio123.github.io/yyoviunleonleonleon/sobrenosotros.html" id="pico1">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
@@ -97,32 +112,35 @@
                 <a class="nav-link" href="#" id="pico1">Contactos</a>
             </li>
         </ul>
-        <div class="row">
+        <div class="row" style="background-color: rgb(231, 215, 201);">
             <div class="col-12 donaciones-heading">DONACIONES</div>
+            <div class="prisma"><img src="prisma.png" alt=""></div>
         </div>
-        <div class="row">
+        <div class="row" style="background-color: rgb(231, 215, 201);">
             <div class="col-12 donaciones-text">
                 <p>¿Deseas apoyarnos con ropa que no uses o económicamente? En los siguientes botones puedes hacerlo. ¡Agradecemos tu colaboración!</p>
+                <div class="row" style="margin-top: 100px; background-color: rgb(231, 215, 201);">
+                    <div class="pelito"><img src="pelito.svg" alt=""></div>
+                    <div class="col-4" style="margin-left: 300px;">
+                        <img  style="width: 230px; height: 230px;" src="donarropa.webp"
+                            alt="" class="donaciones-image mx-auto">
+                        <br>
+                        <button class="donaciones-button">Donar</button>
+                        <div></div>
+                    </div>
+                    <div class="col-4">
+                        <img style="width: 230px; height: 230px;" src="donaplata.webp"
+                            alt="" class="donaciones-image mx-auto">
+                        <br>
+                        <button class="donaciones-button">Donar</button>
+                        <div></div>
+                    </div>
+    
+    
+            </div>
             </div>
         </div>
-        <div class="row" style="margin-top: 200px;">
-                <div class="col-4" style="margin-left: 300px;">
-                    <img  style="width: 230px; height: 230px;" src="donar ropa.png"
-                        alt="" class="donaciones-image mx-auto">
-                    <br>
-                    <button class="donaciones-button">Donar</button>
-                    <div></div>
-                </div>
-                <div class="col-4">
-                    <img style="width: 230px; height: 230px;" src="donar plata.png"
-                        alt="" class="donaciones-image mx-auto">
-                    <br>
-                    <button class="donaciones-button">Donar</button>
-                    <div></div>
-                </div>
 
-
-        </div>
     </div>
 
     <!-- Optional JavaScript -->
